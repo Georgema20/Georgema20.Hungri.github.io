@@ -29,9 +29,9 @@ ingredients.addEventListener('keypress',(e)=>{
 const carousel = document.getElementById('carousel');
 
 document.addEventListener('DOMContentLoaded', function() {
-  // var elems = document.querySelectorAll('.carousel');
-  // var instances = M.Carousel.init(elems);
-  // carousel.style.display= "none";
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems);
+  carousel.style.display= "none";
 });
 
 //Find Recipe 
@@ -44,9 +44,7 @@ findRecipe.addEventListener('click', ()=>{
   
   if(myFood.isValidForm()){
     //MATERIALIZE CAROUSEL INITIATION 
-          var elems = document.querySelectorAll('.carousel');
-       var instances = M.Carousel.init(elems);
-          carousel.style.display= "none";
+          carousel.style.display= "block";
 
         //Recipe stuff 
     myFood.findARecipe();
