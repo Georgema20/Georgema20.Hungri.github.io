@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Import-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Maven+Pro:wght@400;700&family=Roboto:wght@400;700&display=swap');
+    </style>
+  
+  <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="stylesheet" href="style.css">
+<!--Font Awesome-->
+     <script src="https://kit.fontawesome.com/d165c73f14.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="media.css">
+
+  <title>Hungri</title>
+</head>
+
+
+<!--HOME PAGE-->
+<body class= " teal lighten-4">
+  <div id="homepage" class="center-align valign-wrapper">
+    <div class="row center-align valign-wrapper">
+          <div class="container center-align col s12 ">
+            <h1 >Hungri?</h1>
+            <p>A Premier Personalized Recipe Finder</p>
+            <a class="waves-effect waves-light btn-large teal lighten-3" id="getStarted">Lets Get Started</a>
+          </div>
+      </div>
+  </div>
+
+  <!--INPUTTING SECTION-->
+    <div class="container center">
+      <div class="white center-align" id="input">
+          <h5>We know you're hungry!<br> But first, answer the questions below, so we can find some recipes that are best suited for you!</h5>
+          <br><hr> <br>
+          <!--DIETS-->
+          <h5>Which of the five diets below are you currently following?</h5>
+          <div id="diet">
+            <div id="dietType"  class="center-align valign-wrapper">
+              <label for="NoDiet">
+                <p>None</p> 
+              <input type="checkbox" id="NoDiet">
+              </label>
+            </div>
+            <div id="dietType"  class="center-align valign-wrapper">
+              <label for="Vegetarian">
+                <p>Vegetarian</p>
+                <input type="checkbox" id="Vegetarian">
+            </label>
+            </div>
+            <div id="dietType"  class="center-align valign-wrapper">
+              <label for="Vegan">
+                <p>Vegan</p>
+                <input type="checkbox" id="Vegan">
+              </label>
+            </div>
+            <div id="dietType"  class="center-align valign-wrapper">
+
+              <label for="Ketogenic">
+                <p>Ketogenic</p>
+                <input type="checkbox" id="Ketogenic">
+              </label>
+            </div>
+            <div id="dietType"  class="center-align valign-wrapper">
+              <label for="GlutenFree">
+                <p>Gluten Free</p>
+                <input type="checkbox" id="GlutenFree">
+              </label>
+            </div>
+          </div>
+          <br><br>
+          <!--INTOLERANCES-->
+          <h5>Are you intolerant/allergic to any of the foods below?</h5>
+          <div id="intolerances">
+            <div   class="center-align valign-wrapper">
+              <label for="NoIntolerances">
+                <p>None</p> 
+              <input type="checkbox" class="intolerance" id="NoIntolerances">
+              </label>
+            </div>
+            <div   class="center-align valign-wrapper">
+              <label for="Nuts">
+                <p>Nuts</p>
+                <input type="checkbox" class="intolerance" id="Nuts">
+            </label>
+            </div>
+            <div class="center-align valign-wrapper">
+              <label for="Dairy">
+                <p>Dairy</p>
+                <input type="checkbox" class="intolerance " id="Dairy">
+              </label>
+            </div>
+            <div   class="center-align valign-wrapper">
+
+              <label for="Eggs">
+                <p>Eggs</p>
+                <input type="checkbox" class="intolerance "id="Eggs" >
+              </label>
+            </div>
+            <div   class="center-align valign-wrapper">
+              <label for="Soy">
+                <p>Soy</p>
+                <input type="checkbox" class="intolerance "  id="Soy">
+              </label>
+            </div>
+          </div>
+          <div id="intolerances" class="two">
+            <div  class="center-align valign-wrapper">
+              <label for="Shellfish">
+                <p>Shellfish</p>
+                <input type="checkbox"  class="intolerance " id="Shellfish">
+              </label>
+            </div>
+            <div  class="center-align valign-wrapper">
+
+              <label for="Gluten">
+                <p>Gluten</p>
+                <input type="checkbox" class="intolerance " id="Gluten">
+              </label>
+            </div>
+            <div   class="center-align valign-wrapper">
+              <label for="Seafood">
+                <p>Seafood</p>
+                <input type="checkbox" class="intolerance " id="Seafood">
+              </label>
+            </div>
+            <div   class="center-align valign-wrapper">
+              <label for="Sesame">
+                <p>Sesame</p>
+                <input type="checkbox" class="intolerance " id="Sesame">
+              </label>
+            </div>
+          </div>
+
+          <br><br>
+          <!--ITEMS YOU WANT TO USE -->
+          <h5>What are a few items you really want to use?</h5>
+          <div class="row ">
+            <input type="text" class = "col s6 offset-s3 center-align" id="ingredients" placeholder="Blueberries">
+          </div>  
+          <!--SECTION FOR INREDIENTS ADDED-->
+          <div class="row container" id="ingredientsAdded"></div>
+          <br><br>
+          <a class="waves-effect waves-light btn-large teal lighten-3" id="findRecipe">Find Me Something To Cook</a>
+          <h4 id="warning"></h4>
+      </div>
+    </div>
+    
+    <!--CAROUSEL/RECIPES-->
+        
+  <div id="carousel">
+    <div class="carousel">
+
+      <a class="carousel-item" href="#one!">
+        <div class="card white" id="recipe">
+          <div class="box-vertical" >
+              <h3>FOOD NAME 1</h3>
+              <img src="https://spoonacular.com/recipeImages/1096180-312x231.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, a.</p>
+          </div>
+        
+        
+            <div class="box-vertical" id="ingredients1">
+              <h4>Ingredients</h4>
+            
+            </div>
+            <div class="box-vertical" class = "instructions" id="instructions1">
+              <h4>Instructions</h4>
+              
+           </div>
+         
+        </div>
+      </a>
+
+      <a class="carousel-item" href="#one!">
+        <div class="card white" id="recipe">
+          <div class="box-vertical">
+              <h3>FOOD NAME 2</h3>
+              <img src="https://spoonacular.com/recipeImages/1096180-312x231.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, a.</p>
+          </div>
+        
+            <div class="box-vertical" id="ingredients2">
+              <h4>Ingredients</h4>
+              
+            </div>
+            <div class="box-vertical" lass = "instructions" id="instructions2">
+              <h4>Instructions</h4>
+             
+           </div>
+         
+        </div>
+      </a>
+
+      <a class="carousel-item" href="#one!">
+        <div class="card white" id="recipe">
+          <div class="box-vertical">
+              <h3>FOOD NAME 3</h3>
+              <img src="https://spoonacular.com/recipeImages/1096180-312x231.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, a.</p>
+          </div>
+        
+         
+            <div class="box-vertical" id="ingredients3">
+              <h4>Ingredients</h4>
+            </div>
+            <div class="box-vertical" lass = "instructions" id="instructions3">
+              <h4>Instructions</h4>
+              
+           </div>
+          
+        </div>
+      </a>
+      
+    </div>
+  </div>
+
+
+ 
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
+     <script src="food.js"></script>
+     <script src="ui.js"></script>
+     <script src="app.js"></script>
+    
+</body>
+
+
+</html>
+
+
+
+
+

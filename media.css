@@ -1,0 +1,93 @@
+/*some iPads */
+@media (max-width: 1150px) {
+  #carousel {
+    height: 100vh;
+  }
+
+  .card {
+    width: 500px;
+  }
+
+  .box-vertical img {
+    width: 140px;
+  }
+
+  .carousel {
+    width: 140%;
+    left: -40%;
+  }
+}
+
+/*iPhones and some iPads */
+
+@media (max-width: 700px) {
+  #carousel {
+    height: 174vh;
+  }
+
+  .card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-vertical img {
+    width: 100px;
+  }
+
+  .carousel {
+    width: 125%;
+    left: -25%;
+  }
+
+  #homepage {
+    background: url("./img/good-soul-shop-DlO0yz4U67A-unsplash.jpg") no-repeat
+      center 90% / cover;
+    background-size: 80%;
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+  }
+
+  #homepage h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  #homepage p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 4rem;
+  }
+
+  .btn-large {
+    border-radius: 10%;
+  }
+
+  .btn-large {
+    font-size: 1.5rem;
+  }
+
+  #dietType {
+    margin: 0.5rem;
+    padding: 0.2rem;
+  }
+
+  .box-vertical {
+    padding-top: 0rem;
+  }
+
+  #intolerences .two {
+    margin: 0.5rem;
+    padding: 0.4rem;
+  }
+
+  #diet {
+    flex-wrap: wrap;
+  }
+
+  #intolerances {
+    flex-wrap: wrap;
+  }
+}
